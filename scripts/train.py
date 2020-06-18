@@ -8,7 +8,7 @@ from PIL import Image
 recognizer = cv2.face.LBPHFaceRecognizer_create() # instantiate the lbph recognizer
 
 
-path = '../gray_images' #setting out path of folders with images
+path = '1' #setting out path of folders with images
 
 
 if not os.path.exists('../recognizer'):
@@ -33,7 +33,7 @@ def getImageswithId(path):
             #if images in dataset are not in gray scale then use below 3 line
 
             gray_img=cv2.cvtColor(test_img,cv2.COLOR_BGR2GRAY)#convert color image to grayscale
-            face_haar_cascade=cv2.CascadeClassifier('../haarcascade/haarcascade_frontalface_default.xml')#Load haar classifier
+            face_haar_cascade=cv2.CascadeClassifier('haarcascade/haarcascade_frontalface_default.xml')#Load haar classifier
             face=face_haar_cascade.detectMultiScale(gray_img,scaleFactor=1.32,minNeighbors=5)#detectMultiScale returns rectangles
            
             if len(face)!=1:
