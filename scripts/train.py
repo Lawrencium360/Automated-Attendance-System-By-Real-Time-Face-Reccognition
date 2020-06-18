@@ -1,4 +1,4 @@
-# lets import the required packages 
+# import the required packages 
 import os
 import cv2
 import numpy as np
