@@ -34,7 +34,7 @@ def Login():
         login_allow()
     else:
         login_by=""
-        login_allow()
+        # login_allow()
 
   
 f_login=Frame(l_login,pady="25",padx="25")
@@ -557,7 +557,7 @@ def open_excel():
     if(year.get()=="noyear" or sect.get()=="nosec"):
         pass
     else:
-        file="data/excel1\\"+year.get()+"_"+sem.get()+"_"+sect.get()+".xlsx"
+        file="../data/excel1/"+year.get()+"_"+sem.get()+"_"+sect.get()+".xlsx"
         os.startfile(file)
         
 fa=Frame(l1,pady="8",padx="20" ,height=200)
