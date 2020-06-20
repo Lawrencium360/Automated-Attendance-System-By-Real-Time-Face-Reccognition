@@ -76,10 +76,6 @@ def excel():
 
 
 
-
-
-
-
 def student(x):
     l2.pack_forget()
     l1.pack_forget()
