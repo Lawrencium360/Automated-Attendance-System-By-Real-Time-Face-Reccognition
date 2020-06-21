@@ -34,7 +34,7 @@ def Login():
         login_allow()
     else:
         login_by=""
-        # login_allow()
+        login_allow()
 
   
 f_login=Frame(l_login,pady="25",padx="25")
